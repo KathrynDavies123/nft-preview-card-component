@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/* font-family: "Outfit", sans-serif; */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:"Outfit", sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height:100vh;
+}
+
+main {
+    background-color: hsl(216, 50%, 16%);
+    max-width:350px;
+    padding:25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+.imgcontainer {
+    width:100%;
+    height:300px;
+    border-radius: 7px;
+    background-image: url("../images/image-equilibrium.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.overlay{
+    background-color: hsla(178, 100%, 50%,0.3);
+    width:300px; 
+    height:300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+a, span {
+    color: hsl(0, 0%, 100%);
+}
+
+a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    margin-top: 2%;
+}
+
+a:hover {
+    color:hsl(178, 100%, 50%);
+}
+
+p {
+    color:hsl(215, 51%, 70%);
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-weight: 300;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -1%;
+}
+
+.details div {
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+}
+
+.details img {
+    height:20px;
+}
+
+.ethereum {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.credits {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    padding-top: 5%;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.credits img {
+    height:35px;
+    width:35px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.credits a {
+    font-size:1rem;
+}
